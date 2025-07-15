@@ -1,6 +1,7 @@
 // Basic Express server boilerplate
 const express = require('express');
 const path = require('path');
+// Create an instance of an Express application
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -21,3 +22,5 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+
